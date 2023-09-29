@@ -201,84 +201,96 @@ header {
 
 
 .frame3 {
+    max-width: 100%;
+    overflow: hidden;
     margin: 100px 0 0 0;
-    height: 636px;
     font-size: 128px;
     font-weight: 700;
     line-height: 136px;
     letter-spacing: 0px;
-    white-space: nowrap;
-    overflow: hidden;
-    &__1st {
+
+
+&__marque-1 {
+    margin: 0 0 68px 0;
+    & div {
+        width: 250%;
         display: flex;
-        &-p{
-            color: #2FDBBC;
-            animation: marquee1 3s infinite linear;
-                &>span {
-                    color: #181818;
-                    text-shadow: 0 0 1px #444444;
-                }
-                &:after {
-                    content: "How Budss Works";
-                    color: #181818;
-                    text-shadow: 0 0 1px #444444;
-                    }
-                    @keyframes marquee1{
-                        0% {
-                            transform: translateX(0)
-                        }
-                        100% {
-                            transform: translateX(-50%)
-                        }
-                    }
-        }
+        animation: marque-1 6s linear infinite;
     }
-    
-    &__2nd {
-        &-p {
+    & p {
+        white-space: nowrap;
+        width: 100%;
+    }}
+    &__p-black {
+        color: #181818;
+        text-shadow: 0 0 3px #444444;
+    }
+    & &__p-blue {
+        color: #2FDBBC;
+    }
+
+    &__marque-2 {
+        margin: 0 0 68px 0;
+        & div {
+            width: 250%;
+            display: flex;
+            animation: marque-2 6s linear infinite;
+        }
+        & p {
+            white-space: nowrap;
+            width: 100%;
+        }}
+        &__p-black {
             color: #181818;
-            text-shadow: 0 0 1px #444444;
-            animation: marquee2 3s infinite linear;
-            &>span {
-                color: #A64CED;
-                text-shadow:none;
-            }
-            &:after {
-                content: "How Budss Works";
-                color: #A64CED;
-                text-shadow:none;
-            }
-            @keyframes marquee2{
-                0% {
-                    transform: translateX(0)
-                }
-                100% {
-                    transform: translateX(-50%)
-                }
-            }
+            text-shadow: 0 0 3px #444444;
+        }
+        &__p-purple {
+            color: #A64CED;
+        }
+    
+    &__marque-3 {
+    & div {
+        width: 250%;
+        display: flex;
+        animation: marque-3 6s linear infinite;
+    }
+    & p {
+        white-space: nowrap;
+        width: 100%;
+    }}
+    &__p-black {
+        color: #181818;
+        text-shadow: 0 0 3px #444444;
+    }
+    &__p-orange {
+        color: #FFAA4C;
+    }
+    &__phone-content {
+        background-color: #fffb00;
     }
 }
-    &__3rd {
-        &-p {
-            color: #FFAA4C;
-            animation: marquee1 3s infinite linear;
-                &>span {
-                    color: #181818;
-                    text-shadow: 0 0 1px #444444;
-                }
-                &:after {
-                    content: "How Budss Works";
-                    color: #181818;
-                    text-shadow: 0 0 1px #444444;
-                    }
-                    @keyframes marquee1{
-                        0% {
-                            transform: translateX(0)
-                        }
-                        100% {
-                            transform: translateX(-50%)
-                        }
-                    }
-        }
+
+@keyframes marque-1 {
+    0% {
+       transform: translateX(-56%);
+    }
+    100% {
+        transform: translateX(-6%);
+    }   
+}
+@keyframes marque-2 {
+     0% {
+        transform: translateX(-1.65%);
+     }
+     100% {
+        transform: translateX(-51.65%);
+    }
+}
+@keyframes marque-3 {
+     0% {
+        transform: translateX(-61.1%);
+    }
+     100% {
+        transform: translateX(-11.1%);
     }
 }
